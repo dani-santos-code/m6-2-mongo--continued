@@ -22,20 +22,20 @@ const router = require("express").Router();
 //   });
 // });
 
-router.post("/api/book-seat", async (req, res) => {
-  const { seatId, creditCard, expiration } = req.body;
+// router.post("/api/book-seat", async (req, res) => {
+//   const { seatId, creditCard, expiration } = req.body;
 
-  if (!creditCard || !expiration) {
-    return res.status(400).json({
-      status: 400,
-      message: "Please provide credit card information!",
-    });
-  }
+//   if (!creditCard || !expiration) {
+//     return res.status(400).json({
+//       status: 400,
+//       message: "Please provide credit card information!",
+//     });
+//   }
 
-  return res.status(200).json({
-    status: 200,
-    success: true,
-  });
-});
+//   return res.status(200).json({
+//     status: 200,
+//     success: true,
+//   });
+// });
 
 module.exports = router;
